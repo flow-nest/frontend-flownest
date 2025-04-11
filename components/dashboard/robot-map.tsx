@@ -6,15 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Maximize2, Minimize2, RefreshCw } from "lucide-react";
-
-// Mock data for robot positions
-const initialRobots = [
-  { id: "R001", x: 20, y: 30, status: "active", zone: "A" },
-  { id: "R002", x: 50, y: 60, status: "active", zone: "B" },
-  { id: "R003", x: 80, y: 40, status: "active", zone: "A" },
-  { id: "R004", x: 30, y: 70, status: "inactive", zone: "C" },
-  { id: "R005", x: 60, y: 20, status: "charging", zone: "B" },
-];
+import { initialRobots } from "@/lib/utils";
 
 export default function RobotMap() {
   const [robots, setRobots] = useState(initialRobots);
