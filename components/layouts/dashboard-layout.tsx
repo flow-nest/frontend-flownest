@@ -1,9 +1,9 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+
 import {
   SidebarProvider,
   Sidebar,
@@ -35,6 +35,7 @@ import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/theme-toggle";
+import Link from "next/link";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -169,9 +170,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                   <p className="text-xs text-muted-foreground">Admin</p>
                 </div>
               </div>
-              <Button variant="ghost" size="icon">
-                <LogOut className="h-5 w-5" />
-              </Button>
+              <Link href="/">
+                <Button variant="ghost" size="icon">
+                  <LogOut className="h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </SidebarFooter>
         </Sidebar>

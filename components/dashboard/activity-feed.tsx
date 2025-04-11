@@ -15,7 +15,7 @@ export default function ActivityFeed() {
           {activities.map((activity) => (
             <div key={activity.id} className="flex gap-3">
               <div
-                className={`mt-0.5 rounded-full p-1.5 ${
+                className={`mt-0.5 flex items-center justify-center rounded-full p-1.5 ${
                   activity.type === "alert"
                     ? "bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-400"
                     : activity.type === "status"
@@ -23,8 +23,9 @@ export default function ActivityFeed() {
                     : "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-400"
                 }`}
               >
-                <activity.icon className="h-3 w-3" />
+                <activity.icon className="h-4 w-8" />
               </div>
+
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
                   <Badge variant="outline" className="text-xs font-normal">

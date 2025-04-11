@@ -89,7 +89,7 @@ export default function RobotMap() {
         </div>
       </CardHeader>
       <CardContent>
-        <Tabs defaultValue="all" className="mb-4">
+        <Tabs defaultValue="all" className="mb-4 mt-4">
           <TabsList className="bg-[#E6D2B5]">
             <TabsTrigger
               value="all"
