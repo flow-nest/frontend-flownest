@@ -20,12 +20,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { robotsData } from "@/lib/utils";
+import { initialRobots } from "@/mocks/data/robots";
 
 export default function RobotStatusCards() {
   const [filter, setFilter] = useState("all");
 
-  const filteredRobots = robotsData.filter((robot) => {
+  const filteredRobots = initialRobots.filter((robot) => {
     if (filter === "all") return true;
     return robot.status === filter;
   });
@@ -62,10 +62,10 @@ export default function RobotStatusCards() {
                   <div
                     className={`rounded-full p-2 ${
                       robot.status === "active"
-                        ? "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-400"
+                        ? "bg-green-100 text-green-600 dark:bg-green-100 dark:text-green-600"
                         : robot.status === "charging"
-                        ? "bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-yellow-400"
-                        : "bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-400"
+                        ? "bg-yellow-100 text-yellow-600 dark:bg-yellow-100 dark:text-yellow-600"
+                        : "bg-red-100 text-red-600 dark:bg-red-100 dark:text-red-600"
                     }`}
                   >
                     <Truck className="h-5 w-5" />
@@ -81,7 +81,7 @@ export default function RobotStatusCards() {
                       robot.status === "active"
                         ? "default"
                         : robot.status === "charging"
-                        ? "secondary"
+                        ? "outline"
                         : "destructive"
                     }
                   >

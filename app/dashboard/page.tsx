@@ -6,21 +6,21 @@ import ActivityFeed from "@/components/dashboard/activity-feed";
 import StatsCards from "@/components/dashboard/stats-cards";
 
 export default function DashboardPage() {
-    return (
-        <DashboardLayout>
-            <div className="flex flex-col gap-6">
-                <StatsCards />
-                <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-                    <RobotMap />
-                    <InventoryOverview />
-                </div>
-                <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-                    <div className="lg:col-span-2">
-                        <RobotStatusCards />
-                    </div>
-                    <ActivityFeed />
-                </div>
-            </div>
-        </DashboardLayout>
-    );
+  return (
+    <DashboardLayout>
+      <div className="flex flex-col gap-6">
+        <StatsCards />
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <RobotMap />
+          <InventoryOverview />
+        </div>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <RobotStatusCards />
+          </div>
+          <ActivityFeed />
+        </div>
+      </div>
+    </DashboardLayout>
+  );
 }

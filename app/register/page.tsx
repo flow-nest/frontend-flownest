@@ -1,82 +1,120 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Eye, EyeOff, Lock, Mail, User } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-// import { Label } from "@/components/ui/label"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Box } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function RegisterPage() {
-    const [showPassword, setShowPassword] = useState(false)
+  const router = useRouter();
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        // Handle registration logic here
-        console.log("Registration submitted")
-    }
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, you would handle registration here
+    // For now, we'll just redirect to the dashboard
+    router.push("/dashboard");
+  };
 
-    return (
-        <div className="flex min-h-screen flex-col items-center justify-center p-4">
-            <div className="absolute right-4 top-4">
-                <ThemeToggle />
-            </div>
-            <Card className="w-full max-w-md">
-                <CardHeader className="space-y-1">
-                    <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
-                    <CardDescription>Enter your information to create an account</CardDescription>
-                </CardHeader>
-                <form onSubmit={handleSubmit}>
-                    <CardContent className="space-y-4">
-                        <div className="space-y-2">
-                            <h4>Username</h4>
-                            <div className="relative">
-                                <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                                <Input id="name" placeholder="John Doe" className="pl-10" required />
-                            </div>
-                        </div>
-                        <div className="space-y-2">
-                            <h4>Email</h4>
-                            <div className="relative">
-                                <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                                <Input id="email" type="email" placeholder="name@example.com" className="pl-10" required />
-                            </div>
-                        </div>
-                        <div className="space-y-2">
-                            <h4>Password</h4>
-                            <div className="relative">
-                                <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                                <Input id="password" type={showPassword ? "text" : "password"} className="pl-10 pr-10" required />
-                                <Button
-                                    type="button"
-                                    variant="ghost"
-                                    size="icon"
-                                    className="absolute right-0 top-0 h-10 w-10 text-muted-foreground"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                >
-                                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                                    <span className="sr-only">{showPassword ? "Hide password" : "Show password"}</span>
-                                </Button>
-                            </div>
-                        </div>
-                    </CardContent>
-                    <CardFooter className="flex flex-col space-y-4">
-                        <Button type="submit" className="w-full">
-                            Create account
-                        </Button>
-                        <div className="text-center text-sm">
-                            Already have an account?{" "}
-                            <Link href="/login" className="text-primary hover:underline">
-                                Sign in
-                            </Link>
-                        </div>
-                    </CardFooter>
-                </form>
-            </Card>
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center bg-[#F5EBE0] p-4">
+      <div className="w-full max-w-md">
+        <div className="mb-8 flex items-center justify-center gap-2">
+          <Box className="h-8 w-8 text-[#8B4513]" />
+          <span className="text-2xl font-bold text-[#5D4037]">RoboTrack</span>
         </div>
-    )
+        <Card className="border-[#D2B48C]">
+          <CardHeader>
+            <CardTitle className="text-2xl text-[#5D4037]">
+              Create an account
+            </CardTitle>
+            <CardDescription className="text-[#8B4513]">
+              Enter your information to create a RoboTrack account
+            </CardDescription>
+          </CardHeader>
+          <form onSubmit={handleSubmit}>
+            <CardContent className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="firstName" className="text-[#5D4037]">
+                    First name
+                  </Label>
+                  <Input id="firstName" required className="border-[#D2B48C]" placeholder="Sophia"/>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="lastName" className="text-[#5D4037]">
+                    Last name
+                  </Label>
+                  <Input id="lastName" required className="border-[#D2B48C]" placeholder="Ait Mesbah"/>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-[#5D4037]">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  required
+                  className="border-[#D2B48C]"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="password" className="text-[#5D4037]">
+                  Password
+                </Label>
+                <Input
+                  id="password"
+                  type="password"
+                  required
+                  className="border-[#D2B48C]"
+                  placeholder="your password"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="confirmPassword" className="text-[#5D4037]">
+                  Confirm password
+                </Label>
+                <Input
+                  id="confirmPassword"
+                  type="password"
+                  required
+                  className="border-[#D2B48C]"
+                  placeholder="confirm your password"
+                />
+              </div>
+            </CardContent>
+            <CardFooter className="flex flex-col space-y-4">
+              <Button
+                type="submit"
+                className="w-full bg-[#8B4513] text-white hover:bg-[#5D4037]"
+              >
+                Create account
+              </Button>
+              <div className="text-center text-sm">
+                <span className="text-[#5D4037]">
+                  Already have an account?{" "}
+                </span>
+                <Link href="/login" className="text-[#8B4513] hover:underline">
+                  Log in
+                </Link>
+              </div>
+            </CardFooter>
+          </form>
+        </Card>
+      </div>
+    </div>
+  );
 }

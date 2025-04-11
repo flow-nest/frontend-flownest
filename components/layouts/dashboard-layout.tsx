@@ -158,7 +158,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Avatar>
-                  <AvatarImage src="/placeholder-user.jpg" alt="User" />
+                  <AvatarImage
+                    src="/placeholder.svg?height=40&width=40"
+                    alt="User"
+                  />
                   <AvatarFallback>JD</AvatarFallback>
                 </Avatar>
                 <div>

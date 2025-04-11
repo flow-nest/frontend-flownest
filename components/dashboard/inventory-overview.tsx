@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ArrowUpDown } from "lucide-react";
-import { inventoryItems } from "@/lib/utils";
+import { inventoryItems } from "@/mocks/data/inventory";
 
 export default function InventoryOverview() {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
