@@ -1,0 +1,124 @@
+{
+  "language": "English",
+  "screens": {
+    "onboarding": {
+      "facets-1": {
+        "title": "Your Tap-to-Pay Wallet, Simplified",
+        "description": "Experience fast, secure, and hassle-free payments. Just tap and go!"
+      },
+      "facets-2": {
+        "title": "Pay in Seconds with Tap-to-Pay",
+        "description": "No need for cash or cards. Link your account and make contactless payments anywhere"
+      },
+      "facets-3": {
+        "title": "Join the Future of Payments Today",
+        "description": "Create an account to get started or log in to access your wallet"
+      },
+      "create-account-button": "Create New Account",
+      "login-button": "Login"
+    },
+    "login": {
+      "title": "Login",
+      "subtitle": "Want to create new account?",
+      "register-link": "register",
+      "text": {
+        "email": "Email",
+        "emailPlaceholder": "Enter your Email",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your Password",
+        "passwordHint": "Must be at least 8 characters",
+        "forget-link": " Forgot Password?",
+        "createAccount": "Create an Account",
+        "forgotPassword": "Forgotten password?"
+      },
+      "validation": {
+        "emailInvalid": "Invalid email",
+        "emailRequired": "Email is required",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "passwordRequired": "Password is required",
+        "passwordComplexity": "Password must contain at least one uppercase letter, one number, and one special character"
+      }
+    },
+    "register": {
+      "title": "Register",
+      "subtitle": "Already have an account?",
+      "login-link": "log in",
+      "text": {
+        "fullName": "Full name",
+        "fullNamePlaceholder": "Enter your full name",
+        "email": "Email",
+        "emailPlaceholder": "Enter your Email",
+        "phone": "Phone",
+        "phonePlaceholder": "Enter your phone number",
+        "address": "Address",
+        "addressPlaceholder": "Enter your address",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "passwordHint": "Password must contain at least one uppercase letter, one number, and one special character",
+        "registerButton": "Register"
+      },
+      "validation": {
+        "fullNameRequired": "Full name is required",
+        "emailInvalid": "Invalid email",
+        "emailRequired": "Email is required",
+        "phoneRequired": "Phone number is required",
+        "phoneInvalid": "Invalid phone number",
+        "addressRequired": "Address is required",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "passwordRequired": "Password is required",
+        "passwordComplexity": "Password must contain at least one uppercase letter, one number, and one special character"
+      }
+    },
+    "forget-password": {
+      "title": "Reset your password",
+      "subtitle": "Get access to your old account",
+      "email": "Email",
+      "emailPlaceholder": "Enter your Email",
+      "button": "Send Email",
+      "validation": {
+        "emailInvalid": "Invalid email",
+        "emailRequired": "Email is required"
+      }
+    },
+    "forget-password-otp": {
+      "title": "Verify Your OTP",
+      "subtitle": "We sent a code to",
+      "emailPlaceholder": "admin@dhiya.me",
+      "resendText": "Didn’t receive an email? ",
+      "resendButton": "click to resend",
+      "verifyButton": "Verify",
+      "validation": {
+        "otpRequired": "OTP is required",
+        "otpLength": "OTP must be exactly 4 digits"
+      }
+    },
+    "registration-otp": {
+      "title": "One more step",
+      "subtitle": "We sent a code to",
+      "emailPlaceholder": "admin@dhiya.me",
+      "resendText": "Didn’t receive an email? ",
+      "resendButton": "click to resend",
+      "verifyButton": "Verify",
+      "validation": {
+        "otpRequired": "OTP is required",
+        "otpLength": "OTP must be exactly 4 digits"
+      }
+    },
+    "reset-password": {
+      "title": "Reset your password",
+      "subtitle": "Enter your new password to reset your account",
+      "password": "New Password",
+      "passwordPlaceholder": "Enter your new password",
+      "passwordHint": "Must be at least 8 characters",
+      "confirmPassword": "Confirm New Password",
+      "confirmPasswordPlaceholder": "Confirm your new password",
+      "button": "Reset Password",
+      "validation": {
+        "passwordMinLength": "Password must be at least 6 characters",
+        "passwordRequired": "Password is required",
+        "passwordComplexity": "Password must contain at least one uppercase letter, one number, and one special character",
+        "passwordMismatch": "Passwords do not match"
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@ export default function RobotMap() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [selectedZone, setSelectedZone] = useState("all");
 
-  // Simulate robot movement
+  // Simulate robots movement
   useEffect(() => {
     const interval = setInterval(() => {
       setRobots((prevRobots) =>
