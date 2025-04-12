@@ -20,6 +20,7 @@
     "@radix-ui/react-tooltip": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
     "lucide-react": "^0.487.0",
     "msw": "^2.7.3",
     "next": "15.3.0",
