@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "RoboTrack - Robot Movement & Inventory Dashboard",
   description:
-    "Track robot movements and inventory in real-time with a user-friendly dashboard",
+    "Track robots movements and inventory in real-time with a user-friendly dashboard",
 };
 
 export default function RootLayout({

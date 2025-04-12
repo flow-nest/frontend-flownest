@@ -1,0 +1,124 @@
+{
+  "language": "Dansk",
+  "screens": {
+    "onboarding": {
+      "facets-1": {
+        "title": "Din Tap-to-Pay Tegnebog, Forenklet",
+        "description": "Oplev hurtige, sikre og problemfrie betalinger. Bare tryk og gå!"
+      },
+      "facets-2": {
+        "title": "Betal på Sekunder med Tap-to-Pay",
+        "description": "Ingen behov for kontanter eller kort. Tilknyt din konto og foretag kontaktløse betalinger overalt"
+      },
+      "facets-3": {
+        "title": "Bliv en Del af Fremtidens Betalinger i Dag",
+        "description": "Opret en konto for at komme i gang eller log ind for at få adgang til din tegnebog"
+      },
+      "create-account-button": "Opret ny konto",
+      "login-button": "Log ind"
+    },
+    "login": {
+      "title": "Log ind",
+      "subtitle": "Vil du oprette en ny konto?",
+      "register-link": "registrer",
+      "text": {
+        "email": "E-mail",
+        "emailPlaceholder": "Indtast din e-mail",
+        "password": "Adgangskode",
+        "passwordPlaceholder": "Indtast din adgangskode",
+        "passwordHint": "Skal være mindst 8 tegn",
+        "forget-link": " Glemt adgangskode?",
+        "createAccount": "Opret en konto",
+        "forgotPassword": "Glemt adgangskode?"
+      },
+      "validation": {
+        "emailInvalid": "Ugyldig e-mail",
+        "emailRequired": "E-mail er påkrævet",
+        "passwordMinLength": "Adgangskoden skal være mindst 6 tegn",
+        "passwordRequired": "Adgangskode er påkrævet",
+        "passwordComplexity": "Adgangskoden skal indeholde mindst et stort bogstav, et tal og et specialtegn"
+      }
+    },
+    "register": {
+      "title": "Registrer",
+      "subtitle": "Har du allerede en konto?",
+      "login-link": "log ind",
+      "text": {
+        "fullName": "Fulde navn",
+        "fullNamePlaceholder": "Indtast dit fulde navn",
+        "email": "E-mail",
+        "emailPlaceholder": "Indtast din e-mail",
+        "phone": "Telefon",
+        "phonePlaceholder": "Indtast dit telefonnummer",
+        "address": "Adresse",
+        "addressPlaceholder": "Indtast din adresse",
+        "password": "Adgangskode",
+        "passwordPlaceholder": "Indtast din adgangskode",
+        "passwordHint": "Adgangskoden skal indeholde mindst et stort bogstav, et tal og et specialtegn",
+        "registerButton": "Registrer"
+      },
+      "validation": {
+        "fullNameRequired": "Fulde navn er påkrævet",
+        "emailInvalid": "Ugyldig e-mail",
+        "emailRequired": "E-mail er påkrævet",
+        "phoneRequired": "Telefonnummer er påkrævet",
+        "phoneInvalid": "Ugyldigt telefonnummer",
+        "addressRequired": "Adresse er påkrævet",
+        "passwordMinLength": "Adgangskoden skal være mindst 6 tegn",
+        "passwordRequired": "Adgangskode er påkrævet",
+        "passwordComplexity": "Adgangskoden skal indeholde mindst et stort bogstav, et tal og et specialtegn"
+      }
+    },
+    "forget-password": {
+      "title": "Nulstil din adgangskode",
+      "subtitle": "Få adgang til din gamle konto",
+      "email": "E-mail",
+      "emailPlaceholder": "Indtast din e-mail",
+      "button": "Send e-mail",
+      "validation": {
+        "emailInvalid": "Ugyldig e-mail",
+        "emailRequired": "E-mail er påkrævet"
+      }
+    },
+    "forget-password-otp": {
+      "title": "Bekræft din OTP",
+      "subtitle": "Vi sendte en kode til",
+      "emailPlaceholder": "admin@dhiya.me",
+      "resendText": "Modtog du ikke en e-mail? ",
+      "resendButton": "klik for at sende igen",
+      "verifyButton": "Bekræft",
+      "validation": {
+        "otpRequired": "OTP er påkrævet",
+        "otpLength": "OTP skal være præcis 4 cifre"
+      }
+    },
+    "registration-otp": {
+      "title": "Et skridt mere",
+      "subtitle": "Vi sendte en kode til",
+      "emailPlaceholder": "admin@dhiya.me",
+      "resendText": "Modtog du ikke en e-mail? ",
+      "resendButton": "klik for at sende igen",
+      "verifyButton": "Bekræft",
+      "validation": {
+        "otpRequired": "OTP er påkrævet",
+        "otpLength": "OTP skal være præcis 4 cifre"
+      }
+    },
+    "reset-password": {
+      "title": "Nulstil din adgangskode",
+      "subtitle": "Indtast din nye adgangskode for at nulstille din konto",
+      "password": "Ny adgangskode",
+      "passwordPlaceholder": "Indtast din nye adgangskode",
+      "passwordHint": "Skal være mindst 8 tegn",
+      "confirmPassword": "Bekræft ny adgangskode",
+      "confirmPasswordPlaceholder": "Bekræft din nye adgangskode",
+      "button": "Nulstil adgangskode",
+      "validation": {
+        "passwordMinLength": "Adgangskoden skal være mindst 6 tegn",
+        "passwordRequired": "Adgangskode er påkrævet",
+        "passwordComplexity": "Adgangskoden skal indeholde mindst et stort bogstav, et tal og et specialtegn",
+        "passwordMismatch": "Adgangskoderne stemmer ikke overens"
+      }
+    }
+  }
+}
